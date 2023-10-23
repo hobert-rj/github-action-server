@@ -18,7 +18,7 @@ app.get('/deploy-pwa-stage', (req, res) => {
     });
 
     npmScript.stderr.on('data', (data) => {
-        console.error(data);
+        console.warn(data);
     });
 
     npmScript.on('exit', (code) => {
