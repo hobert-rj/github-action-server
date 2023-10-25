@@ -30,8 +30,6 @@ app.get('/deploy-pwa-stage', (req, res) => {
             res.status(500).send('Error running the script');
         }
     });
-
-    res.status(200).send('Script started');
 });
 
 app.listen(port, () => {
